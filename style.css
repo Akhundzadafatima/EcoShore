@@ -9,7 +9,12 @@
 button {
   cursor: pointer;
 }
-
+.router {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
 .Hero {
   background-color: #4e735d;
 }
@@ -24,9 +29,8 @@ button {
   align-items: center;
   justify-content: space-between;
   padding: 80px 200px;
-  /* gap: 80px; */
 }
-li>a{
+li > a {
   color: white;
   text-decoration: none;
 }
@@ -64,11 +68,6 @@ ul {
 .purchase:hover {
   background-color: #8e093c;
 }
-.heroLeft {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
 .leftTitle {
   font-size: 58px;
   font-weight: 700;
@@ -95,12 +94,10 @@ ul {
 }
 .heroRight {
   width: 70%;
-
-  /* padding: 70px 0px; */
   gap: 30px;
   border-radius: 10px;
 }
-.heroRight>img{
+.heroRight > img {
   object-fit: cover;
   height: 400px;
 }
@@ -127,11 +124,10 @@ input[type="text"] {
   outline: none;
 }
 input[type="checkbox"] {
-    display: flex;
+  display: flex;
   width: 24px;
   height: 24px;
   cursor: pointer;
-
 }
 .agree {
   display: flex;
@@ -200,7 +196,8 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding: 150px 200px;
+  padding: 0 200px;
+  padding-bottom: 50px;
 }
 .contentTitle {
   display: flex;
@@ -214,7 +211,7 @@ input[type="checkbox"] {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
- align-items: start;
+  align-items: start;
   justify-content: space-between;
   gap: 50px;
 }
@@ -234,21 +231,20 @@ input[type="checkbox"] {
   font-size: 16px;
   opacity: 50%;
 }
-.Features{
-    display: flex;
+.Features {
+  display: flex;
   flex-direction: column;
-
-  gap:30px;
-  padding: 20px 200px;
+  gap: 30px;
+  padding: 100px 200px;
 }
 .featuresContainer {
   display: flex;
   flex-direction: column;
-  /* padding: 0 200px; */
 }
 .featureCards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 50px;
 }
 
@@ -291,40 +287,20 @@ img {
   font-size: 16px;
   opacity: 50%;
 }
-.texts{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-/* .pages {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  background: none;
-  border: none;
-  cursor: pointer;
-} */
-
-/* .menu {
-
-} */
-/* .router{
-  display: flex;
-  align-items: end;
-  flex-direction: column;
-  padding-right: 220px;
-} */
 
 .hamburger-icon {
   display: none;
-  width: 80px;
-  height: 50px;
+  width: 40px;
+  height: 30px;
 }
 
 @media (max-width: 1440px) {
-  .navbar{
+  .navbar {
     padding: 50px 50px;
   }
   .hamburger-icon {
@@ -332,76 +308,77 @@ img {
   }
 
   .pages {
-    display: flex;
     font-size: 20px;
     display: none;
-    width: 70px;
-    flex-direction: column;
   }
-li{
-  padding: 5px;
-}
-.purchase{
-  margin-top: 17px;
-}
+  li {
+    padding: 5px;
+  }
+  .purchase {
+  }
+  .btn {
+    display: flex;
+    justify-content: end;
+    margin-top: 17px;
+  }
   .pages.active {
     display: block;
+    text-align: right;
   }
 
-  .leftTitle{
+  .leftTitle {
     font-size: 38px;
   }
-  .leftText{
-    font-size: 18px ;
+  .leftText {
+    font-size: 18px;
   }
-  .learn{
+  .learn {
     width: 130px;
     height: 40px;
     font-size: 16px;
   }
-  .heroRight{
+  .heroRight {
     width: 900px;
     padding: 40px 0;
   }
-.rightTitle {
-  font-size: 35px;
-  color: #4e735d;
-  font-weight: 700;
-}
-.heroContainer{
- padding: 20px 50px;
- gap: 10px;
-}
-.inputs{
-  width: 100%;
-}
-input{
-  width: 100%;
-}
-.Content{
-  display: flex;
-  padding: 50px 50px;
-}
-.contentTitle{
-  font-size: 38px;
-}
-.featuresTitle{
-  font-size: 38px;
-}
-.titleText{
-  font-size:18px;
-}
-.Features{
-  padding: 30px 50px;
-}
-img{
-  height: 150px;
-}
-.tCardTitle{
-  font-size: 16px ;
-
-}
-.tCardText{
-  font-size: 14px ;
-}
+  .rightTitle {
+    font-size: 35px;
+    color: #4e735d;
+    font-weight: 700;
+  }
+  .heroContainer {
+    padding: 20px 50px;
+    gap: 20px;
+  }
+  .inputs {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+  }
+  .Content {
+    display: flex;
+    padding: 50px 50px;
+  }
+  .contentTitle {
+    font-size: 38px;
+  }
+  .featuresTitle {
+    font-size: 38px;
+  }
+  .titleText {
+    font-size: 18px;
+  }
+  .Features {
+    padding: 50px 50px;
+  }
+  img {
+    height: 150px;
+  }
+  .tCardTitle {
+    font-size: 16px;
+  }
+  .tCardText {
+    font-size: 14px;
+  }
 }
